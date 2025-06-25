@@ -13,6 +13,8 @@ We explored and compared several models:
 - Random Forest  
 - XGBoost  
 - Support Vector Machine (SVM)
+- CatBoost
+- (and more...)
 
 **Evaluation Metrics:**
 
@@ -22,3 +24,17 @@ We explored and compared several models:
 - F1-Score  
 - ROC-AUC Score
 ---
+---
+
+## TL;DR
+
+This project successfully predicted customer churn using several machine learning models. The **Random Forest** model achieved the highest overall accuracy of **~76.0%**, closely followed by **CatBoost (Optimized)** with **~76.11%**, and **LightGBM** with **~75.40%**.
+
+While **Random Forest** and **LightGBM** provided balanced performance, **XGBoost** and **CatBoost (with high `scale_pos_weight`)** stood out for their strong ability to identify churned customers, with **recall scores above 0.72**, making them especially valuable for minimizing customer loss.
+
+## Future Work
+
+To further improve prediction accuracy and model generalization, future work could explore:
+
+- Deep learning models (e.g., neural networks)
+- Real-time churn prediction systems for dynamic customer retention strategies
